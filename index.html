@@ -12,36 +12,63 @@
 
     <div class="wrapper p-5">
         
-        <div class="container box-bg debug" id="genbox">
+        <div class="container box-bg " id="genbox">
             <h1 class="text-center text-uppercase pb-3">inserisci i dati e calcola subito il prezzo del tuo biglietto</h1>
-            <div class="row d-flex debug">
-                <div class="col-4 debug">
-                    <div class="card">
+            <div class="row d-flex">
+                <div class="col-4">
+                    <div class="card bg-light p-5">
                         <p>Nome Cognome</p>
-                        <input type="text" name="name" id="name" placeholder="Nome e Congnome">
+                        <input type="text" name="name" id="name" placeholder="Es. Mario Rossi">
                     </div>
                 </div>
-                <div class="col-4 debug">
-                    <di class="card">
+                <div class="col-4">
+                    <di class="card bg-light p-5">
                         <p>Selezionare Km</p>
-                        <input type="number" name="km" id="km"  placeholder="Km da percorrere">
+                        <input type="number" name="km" id="km"  placeholder="Es. 120">
                     </di>
                 </div>
-                <div class="col-4 debug">
-                    <div class="card">
+                <div class="col-4">
+                    <div class="card bg-light p-5">
                         <p>Selezionare Età</p>
-                        <input type="number" name="age" id="age" placeholder="Età">   
+                        <input type="number" name="age" id="age" placeholder="Es. 30">   
                     </div>
                 </div>
-                <div class="col-12 debug d-flex justify-content-center py-3">
-                    <button id="btncal">Calcola</button>
-                    <button id="btnnew">Nuovo</button>
+                <div class="col-12  d-flex justify-content-center py-3">
+                    <button class="me-3 btn btn-outline-dark text-uppercase" id="btncal">Calcola</button>
+                    <button class="btn btn-outline-dark text-uppercase" id="btnnew">Nuovo</button>
                 </div>
             </div>
         </div>
-        <div class="ticketf-box">
-            <h1 class="text-uppercase text-center py-3">Biglietto generato</h1>
-            <div></div>
+        <div class="ticket-box container box-bg border rounded pb-3 my-4 d-none">
+            <h1 class="text-uppercase text-center py-3">ecco il tuo biglietto</h1>
+            <div class="row justify-content-around">
+                <div class="col-2 border rounded bg-light">
+                    <p>Nome passeggero</p>
+                    <div class="pass-name text-uppercase"></div>
+                </div>
+                <div class="col-2 border rounded bg-light">
+                    <p>Sconto applicato</p>
+                    <div class="discount">
+
+                    </div>
+                </div>
+                <div class="col-2 border rounded bg-light">
+                    <p>N° ticket</p>
+                    <div class="rndnum">
+                        
+                    </div>
+                </div>
+                <div class="col-2 border rounded bg-light">
+                    <p>Tot. biglietto</p>
+                    <div class="totprice fs-2"></div>
+                </div>
+                <div class="col-2 d-flex justify-content-center align-items-center border rounded bg-light">
+                    
+                    <button type="button" class="btn btn-outline-success text-uppercase me-1">acquista</button>
+                    <button type="button" class="btn btn-outline-danger text-uppercase">annulla</button>
+
+                </div>
+            </div>
         </div>
     </div>
     
@@ -49,7 +76,7 @@
 
 
 
-
+    <script type="text/javascript" src="./js/utility.js"></script>
     <script type="text/javascript" src="./js/script.js"></script>
 </body>
 </html>

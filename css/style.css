@@ -14,10 +14,16 @@
 
 
 .box-bg{
-    background-color: white;
+    background-color: rgba(90, 79, 79, 0.581);
 }
 
 
 p {
     text-align: center;
+    font-weight: 700;
+    
+}
+
+.border{
+    border: 1px solid grey;
 }
