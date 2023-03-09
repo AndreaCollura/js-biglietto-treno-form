@@ -52,7 +52,7 @@ buttonCal.addEventListener('click', function () {
 
 
     switch (true) {
-        case (age < 18 && age > 0):
+        case (age > 0 && age < 18):
             finalPrice = (price - (price * juniorSale)).toFixed(2);
             discountType.innerHTML = `<p>Sconto Junior</p>`;
             totPrice.style.color = 'green';
@@ -75,6 +75,8 @@ buttonCal.addEventListener('click', function () {
             finalPrice = price.toFixed(2);
             discountType.innerHTML = `<p>Nessuno Sconto</p>`;
             rndNumber.innerHTML = `<p>${randomNum}</p>`;
+            discountType.style.color = 'black';
+            totPrice.style.color = 'black';
             totPrice.innerHTML = `<p>${finalPrice}€</p>`;
 
     }
