@@ -47,6 +47,7 @@ buttonCal.addEventListener('click', function () {
         default : 
             
             finalPrice = price;
+            
     }
    
 

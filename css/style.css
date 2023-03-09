@@ -1,0 +1,23 @@
+
+
+
+.wrapper{
+    background-color: rgba(40, 164, 40, 0.685);
+    height: 100vh;
+    
+}
+
+
+.debug{
+    border: 1px solid red;
+}
+
+
+.box-bg{
+    background-color: white;
+}
+
+
+p {
+    text-align: center;
+}

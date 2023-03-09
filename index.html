@@ -10,18 +10,37 @@
 </head>
 <body>
 
-    <div class="container">
-        <h1></h1>
-        <div id="genbox">
-            <input type="text" name="name" id="name">
-            <input type="number" name="km" id="km">
-            <input type="number" name="age" id="age">
+    <div class="wrapper p-5">
+        
+        <div class="container box-bg debug" id="genbox">
+            <h1 class="text-center text-uppercase pb-3">inserisci i dati e calcola subito il prezzo del tuo biglietto</h1>
+            <div class="row d-flex debug">
+                <div class="col-4 debug">
+                    <div class="card">
+                        <p>Nome Cognome</p>
+                        <input type="text" name="name" id="name" placeholder="Nome e Congnome">
+                    </div>
+                </div>
+                <div class="col-4 debug">
+                    <di class="card">
+                        <p>Selezionare Km</p>
+                        <input type="number" name="km" id="km"  placeholder="Km da percorrere">
+                    </di>
+                </div>
+                <div class="col-4 debug">
+                    <div class="card">
+                        <p>Selezionare Età</p>
+                        <input type="number" name="age" id="age" placeholder="Età">   
+                    </div>
+                </div>
+                <div class="col-12 debug d-flex justify-content-center py-3">
+                    <button id="btncal">Calcola</button>
+                    <button id="btnnew">Nuovo</button>
+                </div>
+            </div>
         </div>
-        <div>
-            <button id="btncal">Calcola</button>
-            <button id="btnnew">Nuovo</button>
-        </div>
-        <div class="ticketfinal">
+        <div class="ticketf-box">
+            <h1 class="text-uppercase text-center py-3">Biglietto generato</h1>
             <div></div>
         </div>
     </div>
